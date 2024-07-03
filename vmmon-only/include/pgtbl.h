@@ -19,6 +19,24 @@
 #ifndef __PGTBL_H__
 #   define __PGTBL_H__
 
+//Custom Code
+#ifndef pgd_large
+#define pgd_large(x) (0)
+#endif
+
+#ifndef p4d_large
+#define p4d_large(x) (0)
+#endif
+
+#ifndef pud_large
+#define pud_large(x) (0)
+#endif
+
+#ifndef pmd_large
+#define pmd_large(x) (0)
+#endif
+//Custom code end
+
 
 #include <linux/highmem.h>
 

@@ -69,6 +69,15 @@ PseudoTSC pseudoTSC;
  * created using the following structures.
  */
 
+/*Custom code*/
+#ifndef random_get_entropy_fallback
+unsigned long random_get_entropy_fallback(void) {
+    // Return a stub value or implement the function as needed
+    return 0;
+}
+#endif
+
+
 static VMDriver *vmDriverList = NULL;
 
 static LockedPageLimit lockedPageLimit = {
