@@ -1,13 +1,17 @@
-Original link: https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
+**Original REPO:**
 
-Modified the original version to work with vmware workstation 17.5.2 since there was no update from the original author.
+https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
 
-Test on:
+**Description:**
+
+Modified the original code to make it work with vmware workstation 17.5.2 as we needed immediate fix since the current patch was not working for us.
+
+**Test on:**
 
 - Vmware version 17.5.2
 - Tested Kernel 6.9.7-amd64
 
-INSTALATION:
+**INSTALATION:**
 ```bash
 
 git clone git@github.com:yourusername/vm-host-modules.git
@@ -23,4 +27,4 @@ sudo modprobe vmnet
 
 
 
-Modified by: Bytium - https://bytium.com
+**Bytium** - https://bytium.com
