@@ -11,10 +11,11 @@ Modified the original code to make it work with vmware workstation 17.5.2 as we 
 **Tested on:**
 
 - Vmware Workstation version 17.5.2
+- Debian Testing
 
-Debian Testing:
-- Kernel 6.9.7-amd64
-- Kernel 6.9.10-amd64
+**Kernel Version:**
+- 6.9.7-amd64
+- 6.9.10-amd64
 
 **INSTALLATION:**
 ```bash
