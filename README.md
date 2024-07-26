@@ -11,12 +11,15 @@ Modified the original code to make it work with vmware workstation 17.5.2 as we 
 **Tested on:**
 
 - Vmware Workstation version 17.5.2
-- Kernel 6.9.7-amd64(Debian)
+
+Debian Testing:
+- Kernel 6.9.7-amd64
+- Kernel 6.9.10-amd64
 
 **INSTALLATION:**
 ```bash
 
-git clone git@github.com:yourusername/vm-host-modules.git
+git clone https://github.com/bytium/vm-host-modules.git
 cd vm-host-modules
 git checkout 17.5.2
 
