@@ -2,18 +2,18 @@
 
 https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
 
-**Description:**
+## Description
 
 Vmware Workstation Pro host modules patch.
 
 Modified the original code to make it work with vmware workstation 17.6 as we needed immediate fix since the current patch was not working for us.
 
-**Tested on:**
+## Tested on
 
 - Vmware Workstation version 17.6
 - Debian Testing(Kernel Version: 6.10.6-amd64)
 
-**INSTALLATION:**
+## INSTALLATION
 ```bash
 
 git clone https://github.com/bytium/vm-host-modules.git
@@ -28,9 +28,9 @@ sudo make install
 Big Thanks to original developer: https://github.com/mkubecek 
 
 
+For detailed instruction: https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
 
 
 
-
-**Jobyer Ahmed**\
-**Bytium** - https://bytium.com
+Jobyer Ahmed\
+Bytium - https://bytium.com
