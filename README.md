@@ -1,14 +1,15 @@
 
 ## Description
 
-Vmware Workstation Pro host modules patch.
+This repository provides a patch for VMware Workstation host modules (`vmmon` and `vmnet`) to ensure compatibility with newer Linux kernels on Debian and Ubuntu distributions. It includes automated scripts to build and install the patched modules for seamless integration with your VMware Workstation installation.
 
 Modified the original code to make it work with vmware workstation 17.5.2 and 17.6,  as we needed immediate fix since the current patch was not working for us.
 
 ## Tested on
 
-- Vmware Workstation version 17.6
-- Debian Testing(Kernel Version: 6.10.6-amd64)
+- VMware Workstation Pro: Version 17.6
+- Linux Kernels: Up to version 6.10.x
+- Distributions: Debian-based systems (Debian, Ubuntu, etc.)
 
 ## Installation
 ```bash
@@ -20,6 +21,13 @@ git checkout 17.6
 make
 sudo make install
 ```
+
+What will it do?
+
+- Install the compiled `vmmon.ko` and `vmnet.ko` modules to `/lib/modules/$(uname -r)/misc/`.
+- Copy the generated `vmmon.tar` and `vmnet.tar` files to `/usr/lib/vmware/modules/source/`.
+- Run `vmware-modconfig --console --install-all` to update VMware with the new modules.
+
 
 ## Additional Info
 Original Repo: https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
