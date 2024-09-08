@@ -3,7 +3,7 @@
 
 This repository provides a patch for VMware Workstation host modules (`vmmon` and `vmnet`) to ensure compatibility with newer Linux kernels on Debian and Ubuntu distributions. It includes automated scripts to build and install the patched modules for seamless integration with your VMware Workstation installation.
 
-Modified the original code to make it work with vmware workstation 17.5.2 and 17.6,  as we needed immediate fix since the current patch was not working for us.
+The [original code](https://github.com/mkubecek/vmware-host-modules) was modified to provide immediate fixes for VMware Workstation versions 17.5.2 and 17.6, as the existing patches were not functional for our setup.
 
 ## Tested on
 
