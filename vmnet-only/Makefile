@@ -43,7 +43,11 @@ INCLUDE      += -I$(SRCROOT)/shared
 endif
 
 
+ifdef KVERSION
+VM_UNAME = $(KVERSION)
+else
 VM_UNAME = $(shell uname -r)
+endif
 
 # Header directory for the running kernel
 ifdef LINUXINCLUDE

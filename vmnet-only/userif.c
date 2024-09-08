@@ -550,10 +550,14 @@ VNetCsumAndCopyToUser(const void *src,   // IN: Source
    csum = csum_and_copy_to_user(src, dst, len);
    *err = (csum == 0) ? -EFAULT : 0;
 #else
-   csum = csum_partial(src, len, ~0U);
-   if (copy_to_user(dst, src, len))
+   if (!user_access_begin(dst, len)) {
+      *err = -EFAULT;
       csum = 0;
-   *err = (csum == 0) ? -EFAULT : 0;
+   } else {
+      *err = 0;
+      csum = csum_partial_copy_nocheck(src, dst, len);
+      user_access_end();
+   }
 #endif
    return csum;
 }
@@ -1024,6 +1028,9 @@ VNetUserIfSetUplinkState(VNetPort *port, uint8 linkUp)
 
    userIf = (VNetUserIF *)port->jack.private;
    hubJack = port->jack.peer;
+
+   /* never send link down events */
+   if (!linkUp) return 0;
 
    if (port->jack.state == FALSE || hubJack == NULL) {
       return -EINVAL;

@@ -1,5 +1,6 @@
 /*********************************************************
- * Copyright (C) 1998-2023 VMware, Inc. All rights reserved.
+ * Copyright (c) 1998-2024 Broadcom. All Rights Reserved.
+ * The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -47,7 +48,6 @@
 #include <asm/io.h>
 #include <asm/page.h>
 #include <asm/uaccess.h>
-#include <asm/irq_vectors.h>
 #include <linux/capability.h>
 #include <linux/kthread.h>
 #include <linux/wait.h>
@@ -3351,7 +3351,7 @@ HostIF_SetFastClockRate(unsigned int rate) // IN: Frequency in Hz.
     * threads running in the monitor on all physical CPUs.
     */
 
-   if (rate > MIN_RATE) {
+   if (false) {
       if (!linuxState.fastClockThread) {
          struct task_struct *rtcTask;
 

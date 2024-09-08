@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 ##########################################################
-# Copyright (C) 1998,2015,2020 VMware, Inc. All rights reserved.
+# Copyright (c) 1998-2024 Broadcom. All Rights Reserved.
+# The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the
@@ -29,7 +30,7 @@ $(DRIVER)-y := $(subst $(SRCROOT)/, , $(patsubst %.c, %.o, \
 		$(SRCROOT)/bootstrap/*.c)))
 
 clean:
-	rm -rf $(wildcard $(DRIVER).mod.c $(DRIVER).ko .tmp_versions .cache.mk \
+	rm -rf $(wildcard $(DRIVER).mod.c $(DRIVER).ko .tmp_versions \
 		Module.symvers Modules.symvers Module.markers modules.order \
 		$(foreach dir,linux/ common/ bootstrap/ \
 		./,$(addprefix $(dir),.*.cmd .*.o.flags *.o)))
