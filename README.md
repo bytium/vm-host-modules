@@ -32,5 +32,5 @@ For detailed instruction: https://bytium.com/vmware-workstation-host-module-patc
 
 
 
-Jobyer Ahmed\
+### By Jobyer Ahmed
 Bytium - https://bytium.com
