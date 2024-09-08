@@ -1,6 +1,3 @@
-**Original REPO:**
-
-https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
 
 ## Description
 
@@ -26,6 +23,7 @@ sudo make install
 
 
 Big Thanks to original developer: https://github.com/mkubecek 
+Original Repo: https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
 
 
 For detailed instruction: https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
