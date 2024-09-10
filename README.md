@@ -9,7 +9,7 @@ The [original code](https://github.com/mkubecek/vmware-host-modules) was modifie
 
 - VMware Workstation Pro: Version 17.6
 - Linux Kernels: Up to version 6.10.x
-- Distributions: Debian-based systems (Debian, Ubuntu, etc.)
+- Distributions: Debian-based systems (Debian, Ubuntu, etc.) and Fedora
 
 ## Installation
 ```bash
@@ -34,7 +34,7 @@ Original Repo: https://github.com/mkubecek/vmware-host-modules/tree/workstation-
 
 Thanks: https://github.com/mkubecek 
 
-For detailed instruction: https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
+For detailed instruction(share this link if you want to help others with full instruction): https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
 
 
 
