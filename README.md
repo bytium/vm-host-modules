@@ -13,8 +13,10 @@ The [original code](https://github.com/mkubecek/vmware-host-modules) was modifie
 ## Installation
 ```bash
 
-git clone --depth 1 --branch 17.6 https://github.com/bytium/vm-host-modules.git
+git clone https://github.com/bytium/vm-host-modules.git
 cd vm-host-modules
+git checkout 17.6
+
 make
 sudo make install
 ```
