@@ -29,13 +29,10 @@ What will it do?
 
 
 ## Additional Info
-Original Repo: https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
+For detailed instruction(share this link if you want to help others with full instruction): https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
 
 Thanks: https://github.com/mkubecek 
 
-For detailed instruction(share this link if you want to help others with full instruction): https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
-
-
-
 ## By Jobyer Ahmed
 Bytium - https://bytium.com
+For Latest Update Follow on X: https://x.com/BytiumLLC
