@@ -35,7 +35,6 @@ What will it do?
 
 
 ## Additional Info
-<<<<<<< HEAD
 For detailed instruction(share this link if you want to help others with full instruction): https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
 
 
