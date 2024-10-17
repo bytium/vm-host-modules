@@ -6,7 +6,7 @@ This repository provides a patch for VMware Workstation host modules (`vmmon` an
 ## Tested on
 
 - VMware Workstation Pro: Version 17.5.2, 17.6.0, 17.6.1
-- Linux Kernels: Up to version 6.10.x
+- Linux Kernels: Up to version 6.10.x, 6.11.x
 - Distributions: Debian-based systems (Debian, Ubuntu, etc.) and Fedora
 
 ## Installation
