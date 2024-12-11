@@ -544,9 +544,13 @@ VNetCsumAndCopyToUser(const void *src,   // IN: Source
 {
    unsigned int csum;
 
+// CentOS Strean 9 uses kernel 5.14.0. Release 437 and later don't use csum_and_copy_to_user
+// Need to find a way to test
+#define CENTOS_9_CSUM(s) 0
+
 #if COMPAT_LINUX_VERSION_CHECK_LT(5, 10, 0)
    csum = csum_and_copy_to_user(src, dst, len, 0, err);
-#elif LINUX_VERSION_CODE < KERNEL_VERSION(5, 19, 0)
+#elif LINUX_VERSION_CODE < KERNEL_VERSION(5, 19, 0) && CENTOS_9_CSUM(RHEL_RELEASE)
    csum = csum_and_copy_to_user(src, dst, len);
    *err = (csum == 0) ? -EFAULT : 0;
 #else

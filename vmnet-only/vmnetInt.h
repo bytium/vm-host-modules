@@ -41,7 +41,11 @@
     compat_skb_set_network_header(skb, sizeof (struct ethhdr)),  \
     dev_queue_xmit(skb)                                   \
   )
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 9, 0)
+
+// need to find a way to test that RHEL_RELEASE >= 522
+#define CENTOS_9_RCU(s) 1
+
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 9, 0)) || CENTOS_9_RCU(RHEL_RELEASE)
 #   define dev_lock_list()    rcu_read_lock()
 #   define dev_unlock_list()  rcu_read_unlock()
 #else
