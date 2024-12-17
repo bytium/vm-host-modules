@@ -21,7 +21,7 @@ The [original code](https://github.com/mkubecek/vmware-host-modules) was modifie
 
 git clone https://github.com/bytium/vm-host-modules.git
 cd vm-host-modules
-git checkout 17.6.1
+git checkout 17.6.2
 
 make
 sudo make install
@@ -45,11 +45,6 @@ For Latest Update Follow Bytium on X: https://x.com/BytiumLLC
 
 Original Repo: https://github.com/mkubecek/vmware-host-modules/tree/workstation-17.5.1
 
-Thanks: https://github.com/mkubecek 
-
 For detailed instruction(share this link if you want to help others with full instruction): https://bytium.com/vmware-workstation-host-module-patch-for-debian-and-ubuntu/
 
 
-
-## By Jobyer Ahmed
-Bytium - https://bytium.com
