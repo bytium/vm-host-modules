@@ -140,6 +140,15 @@ ifdef VMX86_DEBUG
 CC_OPTS += -DVMX86_DEBUG
 endif
 
+# Make Centos Strem 9 kernel release avaialble to preprocessor
+ifndef CS9_RELEASE
+CS9_RELEASE := $(shell uname -r | sed -n 's/5.14.0-\([[:digit:]]\+\).el9.x86_64$$/\1/p')
+ifdef CS9_RELEASE
+$(info CS9_RELEASE is $(CS9_RELEASE))
+CC_OPTS += -DKRHEL_RELEASE=$(CS9_RELEASE)
+endif
+endif
+
 # Add Spectre options when available
 
 include $(SRCROOT)/Makefile.kernel
