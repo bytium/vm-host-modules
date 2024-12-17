@@ -47,7 +47,9 @@
 #define LOG(level, args)
 #endif
 
+#ifndef MAX
 #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+#endif
 
 /*
  * Ethernet
